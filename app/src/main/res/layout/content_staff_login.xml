@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jaspreetbhui.cetclg.StaffLogin"
+    tools:showIn="@layout/activity_staff_login">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/teachers"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="STAFF"
+        android:textColor="@color/txt"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName or Email address"
+            android:id="@+id/textView11"
+            android:textColor="@color/txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="@color/input"
+            android:maxLength="35"
+            android:id="@+id/editTextname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/txt"
+            android:id="@+id/textView12" />
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/input"
+        android:ems="10" android:maxLength="25"
+        android:id="@+id/editTextpass"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textViewerror" />
+    </LinearLayout>
+
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button20"
+        android:onClick="stfLogin"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Don't have account? Sign Up here!"
+        android:id="@+id/textView15"
+        android:onClick="stfSignUp"
+        android:textColor="@color/txt"
+        android:layout_below="@+id/button20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+
+</RelativeLayout>

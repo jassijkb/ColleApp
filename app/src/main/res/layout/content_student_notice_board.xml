@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/Listbg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jaspreetbhui.cetclg.StudentNoticeBoard"
+    tools:showIn="@layout/app_bar_student_notice_board">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ly5"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt"
+        android:text="DATE"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt"
+        android:text="NOTICE"
+        android:id="@+id/textView24"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+</LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/ly5"
+        android:dividerHeight="0.5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Notices :"
+        android:textColor="@color/ListTxt"
+        android:textStyle="bold"
+        android:id="@+id/your"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jaspreetbhui.cetclg.StaffNoticeBoard"
+    tools:showIn="@layout/app_bar_staff_notice_board">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/notice"
+        android:textColor="@color/input"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NOTICE :-"
+        android:id="@+id/textView22"
+        android:textColor="@color/txt"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TO :-"
+        android:id="@+id/textView23"
+        android:textColor="@color/txt"
+        android:textStyle="bold"
+        android:layout_below="@+id/notice"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout5">
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            android:layout_weight="1"
+            android:popupBackground="@color/btn" />
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sem"
+            android:layout_weight="1"
+            android:popupBackground="@color/btn"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/button"
+        style="@style/buttonStyle"
+        android:onClick="send"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+
+</RelativeLayout>

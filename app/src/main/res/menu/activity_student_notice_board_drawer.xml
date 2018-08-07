@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NoticeList"
+            android:icon="@drawable/notice"
+            android:title="Notice" />
+        <item
+            android:id="@+id/TList"
+            android:icon="@drawable/list"
+            android:title="Teacher's List" />
+        <item
+            android:id="@+id/StNote"
+            android:icon="@drawable/note"
+            android:title="Notes" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Ssettings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+            <item
+                android:id="@+id/Slogout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
